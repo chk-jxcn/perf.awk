@@ -9,7 +9,7 @@ BEGIN{
     free = 0;
     sep = "	";
 
-    printf("Free" sep "Idle\n")
+    printf("FreeMem" sep "Idle\n")
     while(getline < "/proc/stat") {  #get init value
             if($0 ~ /cpu /) {
                 #user nice system idle io irq sirq 
